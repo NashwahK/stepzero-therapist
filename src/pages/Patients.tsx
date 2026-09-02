@@ -47,7 +47,6 @@ const MOCK_CONFIDENCE_SPREAD = [
 // ── Flowing band chart for condition distribution ─────────────────────────────
 function ConditionStream() {
   const total = MOCK_CONDITION_DISTRIBUTION.reduce((s, c) => s + c.value, 0);
-  let cumulative = 0;
 
   return (
     <div className="bg-white rounded-2xl border border-surface-border p-6 shadow-[0_1px_2px_rgba(20,40,45,0.04)]">

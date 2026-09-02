@@ -59,7 +59,7 @@ export default function NodeTimeline({
             stroke="#5C7478" strokeOpacity="0.25" strokeWidth="1.4"
           />
         ))}
-        {coords.map((c, i) => {
+        {coords.slice(1).map((c, _i) => {
           const color = c.point.top_condition_id ? CONDITION_COLORS[c.point.top_condition_id] ?? '#94A8AB' : '#E7EEF0';
           const r = 4 + (c.point.confidence_score ?? 0) * 7;
           return (
